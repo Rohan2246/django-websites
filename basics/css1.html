@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css layout - grid</title>
+    <style>
+        div{
+            box-shadow: 0 0 3px #333;
+            border-radius: 5px;
+            padding: 1rem;
+
+        }
+        main{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 1rem ;
+        }
+        h1{
+            text-align: center;
+            margin: 0;
+        }
+        #box1{
+            display: grid;
+            place-items: center ;
+        }
+        h2{
+            text-align: center;
+            margin: 0;
+        }
+        #box2{
+            display: grid;
+            place-items: center ;
+            background-color: yellow;
+        }
+    
+    </style>
+</head>
+<body>
+    <main>
+        <div id="box1">
+            <h1>Django</h1>
+            <button>Know More</button>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quod labore dolores atque corporis ullam unde magnam, voluptatem natus neque ea quo blanditiis adipisci, alias rerum a. Adipisci, repellendus amet.</p>
+        </div>
+        <div id="box2">
+            <h2>Html </h2>
+            <button>know More</button>
+        </div>
+        <div>
+            <p>Aspernatur inventore incidunt suscipit ea fuga doloremque nisi possimus, eum quam quasi voluptatem voluptatibus similique voluptates illo consequatur ipsa praesentium adipisci ad nemo obcaecati ab assumenda necessitatibus! Distinctio, at quas!</p>
+        </div>
+        <div>
+            <p>Sint totam dolorum fuga amet magni quos sit consectetur accusamus? Odit consequuntur fugit assumenda eveniet velit dolorem dolores laudantium voluptatum? Expedita rem sequi nulla alias iure, sapiente perspiciatis necessitatibus voluptates!</p>
+        </div>
+        <div>
+            <p>Animi nisi velit qui magnam reprehenderit officia repudiandae eveniet sunt, cumque eius quaerat, dignissimos nesciunt. Harum dolor, in, asperiores sequi omnis sunt, voluptatibus voluptates fugit perspiciatis minus ea aspernatur quidem.</p>
+        </div>
+        <div>
+            <p>Saepe officiis adipisci maxime dolorem quia iusto vero repellat iste consequuntur eius? Consectetur deserunt commodi consequuntur repudiandae quam voluptatibus tenetur natus a ab. Est natus perferendis, vero rem iste asperiores!</p>
+        </div>
+    </main>
+</body>
+</html>
