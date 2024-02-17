@@ -20,26 +20,101 @@
         }
         .container{
             display: flex;
-            outline: 2px solid red;
         }
         h1{
             font-size: 5rem;
+            color: white;
             font-family: sans-serif;
             text-align: center;
         }
         h1> span{
             font-weight: lighter;
         }
+        #s1{
+            background-image: url(background.png);
+            background-size: cover;
+            background-repeat: no repeat;
+        }
+        .leftcol{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center ;
+            gap: 3rem;
+
+        }
+        .leftcol div:nth-child(1){
+             display: flex;
+             gap: 1rem;
+             align-items: center;
+
+
+        }
+        .leftcol a{
+            font-size: 1rem;
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        .leftcol img{
+            border-radius: 60%;
+            border: 2px solid white;
+
+        }
+        .cta{
+            font-size: 1.5rem !important;
+            padding: .5rem 3rem ;
+            color: rgb(111, 111, 237) !important;
+            background-color: white;
+            border-radius:  5rem;
+        }
+        .intro{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(211, 208, 208);
+            gap: 2rem;
+            padding: 10rem 3rem;
+            width: 40%;
+        }
+        .intro h2{
+            font-size: 4rem;
+            color:rgb(112, 9, 209)
+        }
+        .intro p {
+            font-size: 2rem;
+            color: rgb(144, 134, 134);
+        }
+        .owners {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+
+        }
+        .owners .i1 {
+            align-self: flex-start;
+            border-radius: 3rem;
+
+        }
+        .owners .i2{
+            align-self: flex-end;
+            border-radius: 3 rem;
+        }
+        .c2{
+            gap: 3rem;
+        }
+
     </style>
 </head>
 
 <body>
     <main>
-        <section>
+        <section id="s1">
             <div class="container">
                 <div class="leftcol">
                     <div>
-                        <img src="" alt="logo" height="64" width="64">
+                        <img src="logo.png" alt="logo" height="64" width="64">
                         <a href="#"> Zimcore <br> Hubs</a>
                     </div>
                     <h1>
@@ -57,15 +132,15 @@
         </section>
         <section>
             <div class="container">
-                <div class = "leftcol">
+                <div class = "intro">
                     <div>
                         <h2>Our Company Story </h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id provident quos laudantium cum aliquam, pariatur ipsum quia obcaecati itaque aut? Quaerat culpa repellendus nisi quos!</p>
                     </div>
                 </div>
-                <div class= "rightcol">
-                    <img src="" alt="" height="400">
-                    <img src="" alt="" height="400">
+                <div class= "owners">
+                    <img class="i1" src="download.jpg" alt="" height="400">
+                    <img class= "i2" src="download.jpg" alt="" height="400">
                 </div>
             </div>
 
@@ -75,19 +150,19 @@
                 <h2> Our Services </h2>
                 <div class=" Services">
                     <div class="card">
-                        <img src="" alt="" height="80">
+                        <img src="image1.jpg" alt="" height="80">
                         <h3>App Consultancy</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
                              ad dolorem sed quidem inventore quo, nam reprehenderit vel impedit blanditiis.</p>
                     </div>
                     <div class="card">
-                        <img src="" alt="" height="80">
+                        <img src="image2.jpg" alt="" height="80">
                         <h3>App Consultancy</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
                              ad dolorem sed quidem inventore quo, nam reprehenderit vel impedit blanditiis.</p>
                     </div>
                     <div class="card">
-                        <img src="" alt="" height="80">
+                        <img src="image3.jpg" alt="" height="80">
                         <h3>App Consultancy</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
                              ad dolorem sed quidem inventore quo, nam reprehenderit vel impedit blanditiis.</p>
