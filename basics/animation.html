@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            min-height: 100vh;
+            align-items: center;
+
+        }
+        .boxes{
+            width: 200px;
+            height: 200px;
+            background-color: #b6b6b6;
+            display: grid;
+            place-items: center;
+            font-size: 1.2rem;
+            font-family:system-ui ;
+            padding: 1rem;
+        }
+        .efx1{
+            color: red;
+            background-color: #ffff00;
+            font-weight: bolder;
+            transition: 300ms ease-in-out;
+
+        }
+        .efx1:hover{
+            color: white;
+            background-color: #333;
+            border-radius: 100px ;
+
+        }
+        .efx2{
+            background-color: #5151f5;
+            border: 1px solid #333;
+            color: white;
+            transform: rotate(45deg) scale(.75);
+            transition: 300ms ease;
+        }
+        .efx2:hover{
+            transform: rotate(0deg) translate(50px);
+            scale: 0.9;
+            opacity: .5;
+
+            
+        }
+        .efx3{
+            background-color: #5efe5e;
+            animation: toandfro 2s 5 ease-in-out;
+
+
+        }
+        @keyframes toandfro{
+            0%{opacity: .5;
+                translate: 0px;
+                scale: .5;
+
+            }
+            50%{
+                opacity: 1;
+                translate: 0 100px;
+                rotate: 180deg ;
+                scale: .8;
+
+            }
+            100%{
+                translate: 0px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="boxes efx1">Lorem.</div>
+        <div class="boxes efx1">Magni?</div>
+        <div class="boxes efx2">Aspernatur?</div>
+        <div class="boxes efx3">Distinctio.</div>
+        <div class="boxes efx2">Cupiditate.</div>
+        <div class="boxes efx3">Velit.</div>
+        <div class="boxes efx2">Laboriosam.</div>
+        <div class="boxes">Cumque!</div>
+        <div class="boxes">Quo!</div>
+        <div class="boxes">Tempore.</div>
+    </section>
+    
+</body>
+</html>
